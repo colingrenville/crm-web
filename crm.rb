@@ -8,9 +8,13 @@ get '/' do
 end
 
 get '/contacts' do
-	Contact.create("Yehuda", "Katz", "yehuda@example.com", "Developer")
-	Contact.create("Mark", "Zuckerberg", "mark@facebook.com", "CEO")
-  	Contact.create("Sergey", "Brin", "sergey@google.com", "Co-Founder")
+	Contact.create("Yehuda", "Katz", email: "yehuda@example.com", notes: "Developer")
+	Contact.create("Mark", "Zuckerberg", email: "mark@facebook.com", notes: "CEO")
+  	Contact.create("Sergey", "Brin", email: "sergey@google.com", notes: "Co-Founder")
 
   	erb :contacts
+end
+
+get '/contacts/new' do
+	erb :new_contact
 end
