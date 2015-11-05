@@ -130,8 +130,8 @@ class Contact
 		end
 	end
 	
-	def delete
-		@@contact = []
+	def remove
+		@@contacts.delete_if { |contact| contact.id == self.id }
 	end
 
 end
