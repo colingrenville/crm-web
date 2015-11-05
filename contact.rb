@@ -58,8 +58,8 @@ class Contact
 	end
 
 	def self.find(id_number)
-		@@contacts.find do |x|
-			if id_number = x.id
+		@@contacts.each do |x|
+			if id_number == x.id
 				return x
 			end
 		end
