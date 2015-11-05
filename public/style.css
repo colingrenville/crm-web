@@ -11,15 +11,33 @@ header {
 	height: 100px;
 	font-family: 'Noto Sans', sans-serif, 36px;
 	color: #040033;
+	text-align: center;
+}
+
+#mainmenu {
+	height: 50px;
+}
+
+a:link {
+	color: white; 
+	text-decoration: none;
 }
 
 .directory {
-	height: 80px;
+	height: 100px;
 	width: 100%;
-	margin-top: 10px ;
-	margin-bottom: 5px;
-	margin-left: -10px;
+	line-height: 100px;
+	text-decoration: none;
 	border-radius: 10px;
-	background-color: #1DCF4A;
+	position: relative;
+	display: block;
 	text-align: center;
+	font-family: 'Noto Sans', sans-serif, 24px;
+	color: white;
+	font-weight: bold;
+
+
+	background: #014464; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853)); 
 }
+
