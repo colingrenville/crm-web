@@ -1,5 +1,8 @@
 require_relative 'contact.rb'
 require 'sinatra'
+require 'data_mapper'
+
+DataMapper.setup(:default, "sqlite3:database.sqlite3")
 
 # Temporary fake data so that we always find contact with id 1000.
 

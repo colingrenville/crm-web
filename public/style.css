@@ -65,14 +65,15 @@ footer {
 
 .contact {
 	height: 40px;
-	width: 100%;
+	width: 95%;
 	line-height: 40px;
 	border-radius: 10px;
 	position: relative;
 	display: block;
 	text-align: center;
-	margin-left: 20px;
-	margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 5px;	
 	/* font work */
 
 	font-family: 'Noto Sans', sans-serif, 16px;
@@ -90,11 +91,17 @@ footer {
 	display: block;
 	text-align: center;
 	margin-top: 5px;
-	
+
 	/* font work */
 
 	font-family: 'Noto Sans', sans-serif, 16px;
 	color: white;
 	font-weight: bold;
 	background-color: cadetblue;
+}
+
+.submit {
+
+	margin-left: auto;
+    margin-right: auto;
 }
