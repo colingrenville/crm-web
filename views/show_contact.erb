@@ -1,13 +1,13 @@
-<h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
-<p><strong>Email:</strong> <%= @contact.email %></p>
-<p><strong>Note:</strong></p>
-<p><%= @contact.note %></p>
+<div class="showcontact"><h1><%= @contact.first_name %> <%= @contact.last_name %></h1></div>
 
+<div class="showcontact"><p><strong>Email:</strong> <%= @contact.email %></p></div>
+<div class="showcontact" id="notes"><p><strong>Note:</strong></p></div>
+<div class="showcontact" id="notetext"><p><%= @contact.note %></p></div>
 <p><a href="/contacts/<%= @contact.id %>/edit">Edit this Contact</a></p>
-
+#Duplicate Delete button for edit button
 <form action="/contacts/<%= @contact.id %>" method="post">
 	
 	<input type="hidden" name="_method" value="delete">
 	<input type="submit" name="Delete" value="Delete Contact">
-	
+
 </form>

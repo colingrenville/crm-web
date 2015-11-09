@@ -1,7 +1,7 @@
 <h1 class="allcontacts">All Contacts</h1>
 
-<ul>
+<div>
 <% Contact.all.each do |contact| %>
-  <li class="contact"><a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a></li>
+  <div class="showcontact"><a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a></div>
 <% end %>
-</ul>
+</div>

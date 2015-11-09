@@ -1,5 +1,10 @@
+/* Setting attributes for whole document */
 * {
-	font-family: 'Noto Sans', sans-serif
+	font-family: 'Noto Sans', sans-serif;
+	margin: 5px;
+	/*float: center;*/
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a {
@@ -15,33 +20,30 @@ header {
 	background-color: #319FF4;
 	border: 0px solid transparent;
 	border-radius: 10px;
-	width: 100%;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 100px;
 	line-height: 100px;
-	font-family: 'Noto Sans', sans-serif, 36px;
-	color: #040033;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 4vmin;
+	/*color: #040033;*/
 	text-align: center;
 }
 
-#mainmenu {
-	height: 50px;
-	background-color: green;	
-	line-height: 50px;
-}
-
-
+/* Front Page Buttons */
 .directory {
 	height: 80px;
-	width: 100%;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
 	line-height: 80px;
 	border-radius: 10px;
-	position: relative;
-	display: block;
 	text-align: center;
 	
-	/* font work */
-
-	font-family: 'Noto Sans', sans-serif, 24px;
+	/* font */
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 4vmin;
 	color: white;
 	font-weight: bold;
 	
@@ -55,68 +57,105 @@ footer {
 	background-color: #319FF4;
 	border: 0px solid transparent;
 	border-radius: 10px;
-	width: 100%;
+	width: 98%;
 	height: 40px;
 	line-height: 40px;
-	font-family: 'Noto Sans', sans-serif, 10px;
-	color: #040033;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 3vmin;
+	color: white;
 	text-align: center;
 }
 
+
+/* Button Layout for show all contacts page */
 .contact {
 	height: 40px;
 	width: 95%;
 	line-height: 40px;
 	border-radius: 10px;
-	position: relative;
-	display: block;
 	text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 5px;	
-	/* font work */
+	margin-left: auto;
+	margin-right: auto;
+	/* font */
 
 	font-family: 'Noto Sans', sans-serif, 16px;
 	color: white;
 	font-weight: bold;
-	background-color: blue
+	background-color: DeepSkyBlue;
+}
+
+/* button layout for showing all contacts */
+.showcontact {
+	height: 40px;
+	width: 95%;
+	line-height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 5px;	
+	/* font work */
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 2vw;
+	color: white;
+	font-weight: bold;
+	background-color: #004BA1;
 }
 
 .allcontacts {
 	height: 60px;
-	width: 100%;
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
 	line-height: 60px;
 	border-radius: 10px;
-	position: relative;
-	display: block;
+	/*position: relative;*/
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
 
 	/* font work */
 
-	font-family: 'Noto Sans', sans-serif, 16px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 6vmin;
 	color: white;
 	font-weight: bold;
 	background-color: cadetblue;
-}
-
-.submit {
-
-float: none;
-margin: auto 0;
-position: absolute;
-}
-
-.buttonHolder {
-	margin-left: 0 auto;
-	margin-right: 0 auto;
 }
 
 #edit {
 	background-color: #3366CC;
 }
 
-#new {
+/*#new {
 	background-color: #3333CC;
+}*/
+
+#notes {
+	height: 20px;
+	margin-bottom: 0px;
+	line-height: 20px;
+	background-color: #7491B3;
+}
+
+#notetext {
+	margin-top: 0px;
+}
+
+#createnew {
+	font-size: 4vmin;
+}
+
+input[type="submit"] {
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	width: 95%;
+	line-height: 20px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 2vmin;
+	color: white;
+	font-weight: bold;
+	background-color: red;
+	border: 0px transparent;
+	border-radius: 5px;
 }
